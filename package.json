@@ -6,7 +6,7 @@
     "scripts": {
         "build": "tsc",
         "semantic-release": "semantic-release",
-        "publish:npm": "publish"
+        "publish": "publish"
     },
     "author": "",
     "license": "ISC",
