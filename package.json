@@ -1,0 +1,20 @@
+{
+    "name": "@dunav-ruse/my-npm-package",
+    "version": "0.0.0-development",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "semantic-release": "semantic-release"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "semantic-release": "^24.2.1",
+        "typescript": "^5.7.3"
+    }, 
+    "files": ["dist", "README.md"],
+    "publishConfig": {
+        "access": "public"
+    }
+}
