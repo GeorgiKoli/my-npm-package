@@ -1,11 +1,12 @@
 {
     "name": "@dunav-ruse/my-npm-package",
-    "version": "0.0.0-development",
+    "version": "2.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "build": "tsc",
-        "semantic-release": "semantic-release"
+        "semantic-release": "semantic-release",
+        "publish:npm": "publish"
     },
     "author": "",
     "license": "ISC",
