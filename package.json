@@ -1,6 +1,6 @@
 {
     "name": "@dunav-ruse/my-npm-package",
-    "version": "2.0.0",
+    "version": "0.0.0-development",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -8,7 +8,7 @@
         "semantic-release": "semantic-release",
         "publish": "publish"
     },
-    "author": "",
+    "author": "Georgi Iliev <georgi.kolishovski@jax.org>",
     "license": "ISC",
     "devDependencies": {
         "semantic-release": "^24.2.1",
