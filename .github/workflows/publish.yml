@@ -12,7 +12,7 @@ jobs:
 
     strategy: 
       matrix:
-        node-version: [20]
+        node-version: [16]
         os: [ubuntu-latest, windows-latest]
 
     steps:
@@ -23,3 +23,20 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run test
+
+  publish: 
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
+    needs: [integrity]
+    steps:
+      - uses: actions/checkout@v4
+      - name: USe node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{matrix.node-version}}
+      - run: npm ci
+      - run: npm run publish --access public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    
