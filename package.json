@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "build": "tsc",
-        "semantic-release": "semantic-release"
+        "test": "test",
+        "semantic-release": "semantic-release",
+        "publish": "publish"
     },
     "author": "Georgi Iliev <georgi.kolishovski@jax.org>",
     "license": "ISC",
